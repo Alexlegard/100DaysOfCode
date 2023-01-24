@@ -1,0 +1,23 @@
+Day 1
+
+I created my own version of the Filter method!
+
+-It is my second time creating a function on the prototype of the Array class.
+
+-The first time was two challenges ago, when I recreated the Map method.
+
+-The array being used can be accessed with the 'this' keyword.
+
+-You can use this[i] which is very convenient.
+
+-I created a new array with let newArray = [];
+
+-Then I iterated through 'this'
+
+-For each element in 'this', I invoked the callback method. This calls the
+method that was provided to the function whatever it may be.
+
+-Within the loop, I push this[i] to newArray if callback(this[i], i, this)
+evaluates to true.
+
+-I returned newArray.
