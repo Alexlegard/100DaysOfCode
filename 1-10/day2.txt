@@ -1,0 +1,11 @@
+Day 2
+
+I completed three FreeCodeCamp challenges!
+
+-I learned to use the slice method to return the first three elements
+of an array without mutating it.
+-I learned to combine two arrays with the concat method without mutating
+either of them.
+-I learned to use concat to add elements to the end of an array, which
+is better for functional programming because it doesn't mutate the
+original array.
