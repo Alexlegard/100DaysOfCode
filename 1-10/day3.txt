@@ -1,0 +1,25 @@
+Day 3
+
+Learned Javascript's Reduce method. This was a really difficult challenge.
+
+-Reduce reduces the array down to a single value, which is calculated from
+whatever the passed function is.
+
+-There are many ways to use the Reduce method, but the way I did it is to
+pass one parameter, which was an arrow function.
+
+-In the challenge, I had to combine Filter, Map, and Reduce to get the
+average rating of all Christopher Nolan movies in the array.
+
+-Remember how average is calculated: Sum the ratings of all of Nolan movies,
+then divide by the total number of Nolan movies.
+
+-Filter filters the array down to Nolan movies only.
+
+-Then map constructs a new array containing the names of the movies and
+their IMDB ratings.
+
+-Then reduce returns a single value: The sum of the ratings of all Nolan
+movies.
+
+-Finally, I divided by the number of Nolan movies.
