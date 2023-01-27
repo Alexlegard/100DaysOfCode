@@ -1,0 +1,13 @@
+Day 4
+
+-I used the filter and map methods to solve a complex problem.
+
+-I had to take an array of numbers, take the positive integers
+from the array and return a new array containing the squares of
+those positive integers.
+
+-First I used the filter method to filter the array down to
+positive integers.
+
+-Then I used the map method to construct a new array containing
+the squares of the array created from the filter method.
