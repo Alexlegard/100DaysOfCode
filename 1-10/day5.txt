@@ -1,0 +1,16 @@
+Day 5
+
+-I learned how to sort strings alphabetically using the Sort
+and localeCompare methods.
+
+-The next challenge was the same thing, but I had to do it
+without mutating the original array.
+
+-I chained the concat method and the sort method to an empty
+array.
+
+-In the third challenge I learned to split a string into an
+array of words using the split method.
+
+-The split method can also be used to split the string into
+letters.
