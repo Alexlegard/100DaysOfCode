@@ -1,0 +1,12 @@
+Day 8
+
+-I learned to use the every method for an array to return true
+if every element of the array passes a test (the function that's
+passed to the every method)
+
+-And also the some method. The some method returns true if at
+least one element in the array passes the test.
+
+-Finally I learned currying methods that take multiple parameters.
+You can instead make that method take one parameter, and you can
+provide the rest of the arguments later.

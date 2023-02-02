@@ -1,0 +1,10 @@
+Day 6
+
+-I learned to split a string into an array if that string contains
+words that are separated by spaces, or other separators such as dashes.
+
+-I also learned to use the join method to join an array of words into
+a sentence.
+
+-Split and join can be useful to chain together if you want to
+create a slug for example.
