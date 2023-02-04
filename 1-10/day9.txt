@@ -1,0 +1,31 @@
+Day 9
+
+CHALLENGE 1
+
+-Given an array of two integers, return the sum of all consecutive
+numbers, with the first integer as the lowest and the second integer
+as the highest.
+
+-This is just a simple mathematical formula.
+
+CHALLENGE 2
+
+-Given two arrays, return all elements that are in one of the arrays,
+but not the other.
+
+-This requires two for loops, one for each of the arrays to check for
+elements in that array but not in the other.
+
+-Removing duplicates is not necessary
+
+CHALLENGE 3
+
+-A function is passed an array, then several more elements
+
+-Remove the optional elements from the passed array
+
+-I had to convert the optional elements (using the arguments object)
+into an array.
+
+-Then I used the filter method to destroy those elements from the
+passed array.
