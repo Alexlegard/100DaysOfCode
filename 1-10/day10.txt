@@ -1,0 +1,17 @@
+Day 10
+
+-I created an algorithm to convert strings into spinal tap case
+
+-Spinal tap case is lower case separated by dashes. For example:
+this-is-alex-legard
+
+-For all occurrences of a lower case character followed by an
+upper case character, I inserted a space.
+
+-Then I converted the string to lower case.
+
+-Then I replaced all whitespace characters with a dash. The
+replaceAll method takes a regex to be searched with the first
+argument, and the new pattern (dash) as the second argument.
+
+-I had to use the regex /[\s_]/
