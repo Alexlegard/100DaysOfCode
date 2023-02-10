@@ -1,0 +1,21 @@
+Day 11
+
+-I created a "Search and Replace" function
+
+-It takes an original string, an original word, and a
+replacement word.
+
+-Every occurrence of the original word should be replaced
+by the replacement word.
+
+-The case of the original word should be preserved. If the
+original word is uppercase, the replacement word should be
+converted to uppercase. If it's lowercase, the replacement
+word should be converted to lowercase.
+
+-Half the problem was solved simply by using the ReplaceAll
+method.
+
+-I also added a couple of if statements checking the case
+of the first word and I changed the case of the replacement
+word accordingly.

@@ -14,4 +14,4 @@ upper case character, I inserted a space.
 replaceAll method takes a regex to be searched with the first
 argument, and the new pattern (dash) as the second argument.
 
--I had to use the regex /[\s_]/
+-I had to use the regex /[\s_]/m

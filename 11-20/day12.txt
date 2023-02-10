@@ -1,0 +1,32 @@
+Day 12
+
+CHALLENGE 1
+
+-I had to make an array containing DNA pairs. This problem
+is a little hard to explain.
+
+-DNA is a sequence of letters A, T, C, and G. A and T pair
+together, as does C and G.
+
+-For example the string "ATCG" becomes
+[["A, T"], ["T, A"], ["C, G"], ["G, C"]]
+
+-First I used the split method to create an array of letters.
+
+-Then I used a switch statement to replace that element with
+different things if the letter is A, T, C, or G.
+
+CHALLENGE 2
+
+-Given a letter range that's missing a single letter, find the
+missing letter.
+
+-I Created variables for the char codes of the first and last
+letters.
+
+-Then I started a for loop with i starting at the charcode of
+the first letter, and ending at the charcode of the last letter.
+
+-If the string includes that letter (String.fromCharCode(i))
+then return that letter. If no missing letters are found, return
+null.
