@@ -1,0 +1,56 @@
+Day 13
+
+CHALLENGE 1: SORTED UNION
+
+-The function takes two or more arrays, and returns a new array
+containing (one of each) unique values found in those arrays,
+in the same order that they are found.
+
+-Grabbed all the arrays using the arguments object and turned it
+into a new array.
+
+-Then I concatenated them into a single array using the array
+concat method.
+
+-Then I looped through that array and added the numbers into a
+new array, skipping the ones that are not unique.
+
+CHALLENGE 2: CONVERT HTML ENTITIES
+
+-In a string, I replaced the characters &, <, >, ', and " into
+their html entities.
+
+-I split the string into an array using the split method.
+
+-Then I looped through every character. Then each time I ran
+into one of those characters, I used a switch statement to
+replace it with a different string.
+
+-Then I reunited the string with the join method.
+
+CHALLENGE 3: SUM ALL ODD FIBONACCI NUMBERS
+
+-I had to sum all the fibonacci numbers up to n. For example,
+sumFib(10) should return 10 because it's the sum of the
+fibonacci numbers 1, 1, 3, and 5.
+
+-First, the function fibonacci returns a number's fibonacci
+value.
+
+-In a second function, I had a while loop that adds the odd
+fibonacci numbers into an array, then it ends the loop when
+it reaches a fibonacci number greater than 10.
+
+CHALLENGE 4: SUM ALL PRIMES
+
+-I had to write a function that returns the sum of all prime
+numbers up to n.
+
+-I wrote a function that returns true if n is prime, and false
+otherwise.
+
+-I wrote another function that returns an array of all prime
+numbers up to n.
+
+-I wrote a third function that returns the sum of all primes
+found in the array that's created by the previous function.
