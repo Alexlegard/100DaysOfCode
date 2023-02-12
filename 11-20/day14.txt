@@ -1,0 +1,21 @@
+Day 14
+
+-Given an array of two integers, I had to find the lowest
+common multiple of all numbers in the range between the two
+cumbers.
+
+-For example, the array [1,5] should return 60 because the
+LCM of 1, 2, 3, 4 and 5 is 60.
+
+-I started by creating a function that returns the LCM of
+two numbers.
+
+-Then in the other function, I made sure that for the
+parameter array, the larger number always follows the
+smaller number.
+
+-I set a currentLCM variable to 1.
+
+-Finally, I looped through all the numbers between the
+smaller and larger number. For each one, I used the previous
+function to find the LCM of currentLCM and i.
