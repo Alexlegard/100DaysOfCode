@@ -1,0 +1,27 @@
+Day 15
+
+CHALLENGE 1
+
+-Given an array and a function, loop through each element and
+remove it until you reach an element that the given function
+evaluates as true.
+
+-Test if(func(arr[0]) == false)
+
+-Then if it is false, use the shift method and try it again
+
+-If it's true, return the array
+
+-If the array is empty, return an empty array
+
+CHALLENGE 2
+
+-I need to flatten a nested array.
+
+-In the function I make a flatArray variable, then loop through
+the passed array
+
+-For each element in the array, if it's an array, concat
+flatArray with steamrollArray(arr[i])
+
+-If it's not an array, concat flatArray with arr[i]
