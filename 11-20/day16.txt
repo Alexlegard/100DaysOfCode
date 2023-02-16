@@ -1,0 +1,15 @@
+Day 16
+
+-I had to translate a string of binary numbers into a sentence
+
+-The numbers correspond to character codes, which can then be
+converted into a letter or other character using the fromCharCode
+method.
+
+-First I created a helper function to translate a single binary
+number into a letter.
+
+-Then I used it in the function that translates an entire binary
+string. I used the split method to make an array of binary numbers,
+then I looped through the array and used the helper function to
+get a character, and I added that character to a results string.

@@ -1,0 +1,21 @@
+Day 17
+
+-I had to make a function that sums two arguments.
+
+-If only one argument is provided, return a function
+that expects the second argument, and returns the sum.
+
+-If any arguments are not actual numbers, return
+undefined.
+
+-My function has a single parameter, x.
+
+-If x is not a number, return undefined.
+
+-If two or more arguments are provided, then test if
+the second argument is a number. If it isn't return
+undefined and if it is, return x + arguments[1].
+
+-If only one argument is provided, return a function
+that takes the second argument y, and returns x + y
+(or undefined if y is not a number).
