@@ -1,0 +1,10 @@
+Day 19: Kepler's Third Law
+
+-I worked out the mathematical formula for the orbital period,
+given the earth's radius, the earth's gravitational constant,
+and the object's height. I also rounded to the nearest whole
+number.
+
+-I used a for loop to loop through an array of objects, calced
+the orbital period, I deleted the old property for the orbital
+height and I set a new property for the orbital period.

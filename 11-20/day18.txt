@@ -1,0 +1,22 @@
+Day 18
+
+-I had to make a person object constructor.
+
+-I assign this.getFirstName, this.getLastName, this.getFullName,
+this.setFirstName, this.setLastName, and this.setFullName to
+functions.
+
+-I also add a fullName variable (not the same thing as an object
+property)
+
+-getFirstName, getLastName, and getFullName take no parameters
+and return fullName.split(" ")[0], fullName.split(" ")[1], and
+fullName respectively.
+
+-setFirstName, setLastName, and setFullName assigns fullName to
+
+ -name + " " + fullName.split(" ")[1]
+ 
+ -fullName.split(" ")[0] + " " + name
+ 
+ -And name, respectively.
