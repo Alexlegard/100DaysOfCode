@@ -1,0 +1,26 @@
+Day 20
+
+Challenge 1: Palindromes
+
+-Return true if the passed string is a palindrome
+
+-Converted the string to lowercase
+
+-Then removed all non alpha numeric characters
+
+-Then split into an array
+
+-Created a new array that's the reverse
+
+-If both arrays are the same return true
+
+Challenge 2: Roman numeral converter
+
+-Wrote helper function that converts a number to its ones,
+tens, hundreds, and thousands.
+
+-Helper function that returns a roman symbol for ones tens
+hundreds and thousands
+
+-You can kind of append them in the order of thousands,
+hundreds, tens, and ones and you will end up with the correct roman numeral
