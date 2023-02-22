@@ -1,0 +1,16 @@
+Day 21: Test US Phone Numbers
+
+-I had to test if the passed string looks like a US phone number.
+
+-Of course regular expressions came to mind
+
+-I created an array of regular expressions. Each string in the
+array is a regex representing one way that a US phone number could
+be arranged.
+
+-Then I used the array.join("|") method to combine all of them into
+a single regular expression.
+
+The tricky part was accounting for special characters in strings
+and regular expressions, and add escape characters accordingly. The
+(, ), and / characters were problematic.
