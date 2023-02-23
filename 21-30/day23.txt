@@ -1,0 +1,157 @@
+Day 23: Cash Register
+
+-I had to write a cash register function that accepts price as the first
+argument, amount received as the second argument, and a cash-in-drawer
+array as the third argument.
+
+-First I created two helper functions called add and subtract. These are
+necessary because working with floating point numbers representing money
+often runs into rounding issues. Working with these helper functions makes
+my job a lot easier when writing my main function.
+
+-Then I wrote a currencyValues constant that stores the value of each coin
+and bill.
+
+-Calculated difference between cash and price parameters
+
+-Calculated the available change in the cash register, and if it's not
+enough to cover the change, it returns an object saying insufficient funds
+
+-If the available change in the cash register is exactly equal to change,
+return an object saying the register is closed
+
+-Create a new changeGivenArray where each currency is equal to $0 and set
+a new variable changeGiven to $0
+
+While loop where i equals 8 going down to 0. Each value of i represents a
+different currency value from the currencyValues constant
+
+-Each loop through, if cash-in-drawer is greater than the currency value i,
+increment several different variables, keep doing that until changeDue is
+no longer greater than currency value i
+
+-So changeGivenArray will fill up starting with the most valuable currency
+and moving down the list
+
+-This method will always produce exact change for US currency but not for
+all worldwide currencies
+
+-Here is my code below.
+
+function checkCashRegister(price, cash, cid) {
+  // All of the test cases give cash being higher
+  // than price.
+  // First, calculate change due (difference between
+  // price and cash) and change (total amount of
+  // change in the drawer)
+  const currencyValues = [
+    ["PENNY", 0.01],
+    ["NICKEL", 0.05],
+    ["DIME", 0.1],
+    ["QUARTER", 0.25],
+    ["ONE", 1],
+    ["FIVE", 5],
+    ["TEN", 10],
+    ["TWENTY", 20],
+    ["ONE HUNDRED", 100]
+  ];
+
+  let changeDue = cash - price;
+  let changeAvailable = add(cid[0][1], cid[1][1], cid[2][1], cid[3][1], cid[4][1],
+    cid[5][1], cid[6][1], cid[7][1], cid[8][1]);
+
+  console.log("changeDue: " + changeDue + " Change: " + changeAvailable);
+
+  if( changeAvailable < changeDue ) {
+    // Not enough change in the drawer
+    return {status: "INSUFFICIENT_FUNDS", change: []};
+  }
+  if( changeAvailable == changeDue ) {
+    // Exact change in the drawer
+    return {status: "CLOSED", change: cid};
+  }
+  let changeGivenArray = [
+    ["PENNY", 0],
+    ["NICKEL", 0],
+    ["DIME", 0],
+    ["QUARTER", 0],
+    ["ONE", 0],
+    ["FIVE", 0],
+    ["TEN", 0],
+    ["TWENTY", 0],
+    ["ONE HUNDRED", 0],
+  ];
+  let changeGiven = 0;
+
+  let i = 8;
+  while( i >= 0 ) {
+    // Compare changeDue with currencyValues[i][1]
+    if( changeDue >= currencyValues[i][1] ) {
+      // Check if there is change left in cid, and if
+      // not, move on to the next available currency.
+      // Increment changeGivenArray and changeGiven
+      // Decrement changeDue and changeInDrawer
+      if( cid[i][1] >= currencyValues[i][1] ) {
+        console.log("changeDue: " + changeDue + " Adding "+ currencyValues[i][1]);
+        changeGivenArray[i][1]= add(changeGivenArray[i][1], currencyValues[i][1]);
+        changeGiven = add(changeGiven, currencyValues[i][1]);
+        changeDue = subtract(changeDue, currencyValues[i][1]);
+        cid[i][1] = subtract(cid[i][1], currencyValues[i][1]);
+      } else {
+        i--;
+      }
+    } else {
+      i--;
+    }
+  }
+  console.log("Out of while loop.");
+  // After we populate changeGivenArray, remove any 0
+  // entries with the filter method.
+  let filteredChangeGivenArray =
+    changeGivenArray.filter(item => item[1] !== 0)
+    .reverse();
+
+  console.log("Change given: " + changeGiven);
+  console.log("Change given array: " + filteredChangeGivenArray);
+  console.log("Change due: " + changeDue);
+  console.log("Cash in drawer: " + cid);
+  if(changeDue == 0) {
+    return {status: "OPEN", change: filteredChangeGivenArray};
+  } else {
+    return {status: "INSUFFICIENT_FUNDS", change: []};
+  }
+}
+
+const cashInDrawer = [
+  ["PENNY", 0.01],
+  ["NICKEL", 0],
+  ["DIME", 0],
+  ["QUARTER", 0],
+  ["ONE", 1],
+  ["FIVE", 0],
+  ["TEN", 0],
+  ["TWENTY", 0],
+  ["ONE HUNDRED", 0]
+];
+
+checkCashRegister(19.5, 20, cashInDrawer);
+
+//Returns the sum of x floating point numbers.
+function add(x) {
+
+  let sum = Array.from(arguments)
+    .map(x => Math.round(x * 100))
+    .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+  sum /= 100;
+  return sum;
+}
+
+// Subtracts the second floating point number from the first one.
+function subtract(x, y) {
+
+  x = Math.round(x * 100);
+  y = Math.round(y * 100);
+
+  let difference = x - y;
+  return difference / 100;
+}
