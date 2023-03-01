@@ -1,0 +1,14 @@
+Day 25
+
+Challenge 1: Render a Class Component to the DOM
+
+-I used the Render method of a component class to include two other
+components, representing fruits and vegetables.
+
+-Outside the class, I used the ReactDOM.render method to render the
+component.
+
+Challenge 2: Write a React Component from Scratch
+
+-Exactly what it looks like, I had to write a React component from
+scratch, then use the ReactDOM.render method to render it.
