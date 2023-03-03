@@ -1,0 +1,17 @@
+Day 26
+
+Challenge 1: React component with parameters.
+
+-I had passed those parameters in another React component
+that used the first component.
+
+-I was reminded that react components could be created as
+an arrow function.
+
+Challenge 2: Passing arrays to React components
+
+-Like the first challenge, but arrays have to be treated
+as Javascript and I have to put the array in curly brackets.
+
+-To render the array in the original component, I use
+props.array.join(", ")

@@ -1,0 +1,15 @@
+Day 27
+
+-I completed a few challenges related to component properties
+
+-Passing properties
+
+-Passing array as props (making sure the props match a specific type)
+
+-Giving a prop a default value
+
+-Overriding default props
+
+-Setting the expected type of props with PropTypes
+
+-Access a child component's props with this.props
