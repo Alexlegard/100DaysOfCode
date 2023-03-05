@@ -1,0 +1,24 @@
+Day 29
+
+Challenge 1: Render state in the user interface
+
+-I simply displayed one of the states in a component.
+
+Challenge 2: Render state in the user interface another way
+
+-I saved the state into a Javascript variable, then displayed the
+variable.
+
+Challenge 3: Set state with this.setState
+
+-State in React expects not to be modified directly, rather you
+should modify it with the setState method.
+
+Challenge 4: Bind 'this' to a class method
+
+-I found out that in order for methods to have access to state and
+props, you need to use this.handleClick = this.handleClick.bind(this)
+(in this case for the handleClick method).
+
+-I also read an article on the subtleties of this in both Javascript
+and React.

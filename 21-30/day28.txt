@@ -1,0 +1,17 @@
+Day 28
+
+challenge 1: Review Using Props with Stateless Functional Components
+
+-There was a parent class component that was pre-created
+
+-I created a functional component. It was an arrow function with the
+parameter "props" and it returns JSX.
+
+-After creating it I updated its .defaultprops and .proptypes.
+
+Challenge 2: Create a Stateful Components
+
+-I created my first stateful component
+
+-I created a state object in the component's constructor, after
+super(props). Inside I set firstName to Alex.
