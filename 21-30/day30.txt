@@ -1,0 +1,12 @@
+Day 30: Use State to toggle an Element
+
+-I had to create a function that toggles a boolean state called visibility
+and I had to display a component if visibility equals true.
+
+-I had this function that I found conceptually weird.
+
+toggleVisibility() {
+	this.setState(prevState => ({
+		visibility: !prevState.visibility
+	}));
+}

@@ -1,0 +1,23 @@
+Day 31: Write a Simple Counter
+
+-I forgot to sumbit the previous day's challenge, so I had to redo it.
+
+-In the constructor I had to bind 3 methods to this: Increment, decrement and reset.
+
+-I declared the methods outside of the constructor
+
+increment() {
+    this.setState(prevState => ({
+      count: prevState.count+1
+    }));
+  }
+decrement() {
+this.setState(prevState => ({
+  count: prevState.count-1
+}));
+}
+reset() {
+this.setState(prevState => ({
+  count: 0
+}));
+}
