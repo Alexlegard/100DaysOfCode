@@ -1,0 +1,13 @@
+Day 32
+
+Challenge 1: Create a controlled input
+
+-I had a stateful component, with an "input" state and a handleChange
+method. I also had an text field.
+
+-I had to make sure the component's state and the value inside the text
+field are synced.
+
+-This is easily accomplished by adding the fields
+value = {this.state.input} onChange = {this.handleChange}
+I need to remember both of these are needed.
