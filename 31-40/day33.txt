@@ -1,0 +1,6 @@
+Day 33
+
+-Started with the Net Ninja React tutorial
+
+-I downloaded node.js and created a new react app. Then I made some basic
+changes like deleting ReportWebVitals.
