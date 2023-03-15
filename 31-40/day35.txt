@@ -1,0 +1,23 @@
+Day 35
+
+-Appointment with my mentor Daniel Corner
+
+-He showed me how to use VS code shortcuts, we created a new Footer component,
+among other things
+
+-After that, I installed a Font Awesome package to try to incorporate some icons
+
+-Then the terminal warned me that I had some security vulnerabilities
+
+-I managed to screw everything up by running... I can't remember exactly what it
+was, but it was something that updated all the packages in package.json to their
+newest versions.
+
+-I had to create a new React project and copy over the components folder, then I
+had to redo some tasks like deleting reportWebVitals, and reinstalling the React
+Router package.
+
+-Then I created some components and added a bit of css so the components are
+arranged in a somewhat pleasing way
+
+-This took all afternoon

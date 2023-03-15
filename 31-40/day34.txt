@@ -1,0 +1,7 @@
+Day 34
+
+-It's been a couple days and I forgot to write this post, but I believe I wrote
+my first React component and displayed it to the page after creating a new React
+project.
+
+-I also had to install node.js and chocolatey on this computer

@@ -1,0 +1,8 @@
+Day 36
+
+-I completed the next FreecodeCamp challenge: Pass State as Props to Child Components
+
+-It really was a simple challenge, but I had trouble remembering how to pass props
+but it's as simple as <Navbar name={this.state.name}>
+
+-I also wrote the entries for the previous two days as I fell quite a bit behind on that
