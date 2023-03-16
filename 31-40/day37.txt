@@ -1,0 +1,8 @@
+Day 37
+
+-Did a FreeCodeCamp challenge where I had to pass the input state as well as
+the handleChange method to a component as props.
+
+-I found this one to be a hard one to understand conceptually. I had to ask
+chatgpt a couple questions like how does data flow between myApp, getInput,
+and renderInput?
