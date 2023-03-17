@@ -1,0 +1,19 @@
+Day 38
+
+Challenge 1: Intro to Lifecycle Methods
+
+-I read about lifecycle methods like componentWillMount, componentDidMount,
+shouldComponentUpdate, componentDidUpdate, and componentWillUnmount.
+
+-I also read a very confusing article about componentWillUnmount's future
+deprecation.
+
+-The challenge itself was very simple, just a single console.log statement.
+
+Challenge 2: use the Lifecycle Method componentDidMount
+
+-I had the componentDidMount pre-written for me to include a setTimeout
+statement to change the component's state. This is to simulate an API call.
+
+-All I had to do for this challenge is to display the component's state,
+something that I've already done many times.
